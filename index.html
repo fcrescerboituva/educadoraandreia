@@ -16,6 +16,7 @@
                     <li><a href="#roda">Roda de Conversa</a></li>
                     <li><a href="#impactos">Cartazes</a></li>
                     <li><a href="#como-ajudar">Filme sobre o Bullying</a></li>
+                     <li><a href="#abelha">Passeio da Abelha</a></li>
                 </ul>
             </nav>
         </div>
@@ -291,6 +292,102 @@
         document.getElementById(modalId).style.display = "none";
     }
 </script>
+
+<section id="abelha" class="section">
+        <div class="container">
+            <h2>Abelhinha indo passear...</h2>
+            <ul>
+                
+                <li>As crianças levaram a abelhinha para casa e escolheram um nome para ela - "Panetone".</li>
+            </ul>
+                    <br>
+
+<!-- Imagens e vídeo com modal -->
+<div class="image-gallery">
+    <img src="image13.jpeg" alt="Imagem 1" class="gallery-image" onclick="openModal('image13.jpeg')">
+    <img src="image14.jpeg" alt="Imagem 2" class="gallery-image" onclick="openModal('image14.jpeg')">
+    <img src="video1.png" alt="Vídeo 1" class="gallery-image" onclick="openModal('video1.mp4')">
+    <img src="video2.png" alt="Vídeo 1" class="gallery-image" onclick="openModal('video2.mp4')">
+</div>
+
+
+<!-- Modals -->
+<div id="image13.jpeg" class="modal" onclick="closeModal('image13.jpeg')">
+    <img src="image13.jpeg" alt="Imagem 1" class="modal-content">
+</div>
+
+<div id="image14.jpeg" class="modal" onclick="closeModal('image14.jpeg')">
+    <img src="image14.jpeg" alt="Imagem 2" class="modal-content">
+</div>
+
+<!-- Modal para vídeo -->
+<div id="video1.mp4" class="modal" onclick="closeModal('video1.mp4')">
+    <video class="modal-content" controls autoplay muted>
+        <source src="video1.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+</div>
+
+<div id="video2.mp4" class="modal" onclick="closeModal('video2.mp4')">
+    <video class="modal-content" controls autoplay muted>
+        <source src="video2.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+</div>
+</div>
+<style>
+    .image-gallery {
+        display: flex;
+        gap: 15px;
+    }
+    
+    .gallery-image {
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        border-radius: 8px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .gallery-image:hover {
+        transform: scale(1.1);
+    }
+
+    /* Estilos do modal */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.7);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        max-width: 90%;
+        max-height: 90%;
+        margin: auto;
+        border-radius: 8px;
+    }
+</style>
+
+<!-- Scripts para abrir e fechar o modal -->
+<script>
+    function openModal(modalId) {
+        document.getElementById(modalId).style.display = "flex";
+    }
+
+    function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+    }
+</script>
+
 
         </div>
     </section>
