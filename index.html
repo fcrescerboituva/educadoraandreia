@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projeto Bullying - Educadora Andréia Melo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Projeto Bullying - Educadora Andréia Melo</h1>
+            <nav>
+                <ul>
+                    <li><a href="#roda">Roda de Conversa</a></li>
+                    <li><a href="#impactos">Cartazes</a></li>
+                    <li><a href="#como-ajudar">Filme sobre o Bullying</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   <section id="roda" class="section">
+    <div class="container">
+        <img src="logos.png" style="max-width: 100%; height: auto;">
+<br><p></p>
+        <h2>Roda de Conversa sobre Bullying</h2>
+        <p>Aquilo que eles sabem e gostariam de saber sobre o assunto. E também orientação dos perigos.</p>
+        <br>
+        
+        <!-- Imagens com modal -->
+        <div class="image-gallery">
+            <img src="image1.jpeg" alt="Imagem 1" class="gallery-image" onclick="openModal('image1.jpeg')">
+            <img src="image2.jpeg" alt="Imagem 2" class="gallery-image" onclick="openModal('image2.jpeg')">
+            <img src="image3.jpeg" alt="Imagem 3" class="gallery-image" onclick="openModal('image3.jpeg')">
+            <img src="image4.jpeg" alt="Imagem 3" class="gallery-image" onclick="openModal('image4.jpeg')">
+           
+        </div>
+
+        <!-- Modals -->
+        <div id="image1.jpeg" class="modal" onclick="closeModal('image1.jpeg')">
+            <img src="image1.jpeg" alt="Imagem 1" class="modal-content">
+        </div>
+
+        <div id="image2.jpeg" class="modal" onclick="closeModal('image2.jpeg')">
+            <img src="image2.jpeg" alt="Imagem 2" class="modal-content">
+        </div>
+
+        <div id="image3.jpeg" class="modal" onclick="closeModal('image3.jpeg')">
+            <img src="image3.jpeg" alt="Imagem 3" class="modal-content">
+        </div>
+        <div id="image4.jpeg" class="modal" onclick="closeModal('image4.jpeg')">
+            <img src="image4.jpeg" alt="Imagem 3" class="modal-content">
+        </div>
+       
+    </div>
+</section>
+
+<!-- Estilos para o modal -->
+<style>
+    .image-gallery {
+        display: flex;
+        gap: 15px;
+    }
+    
+    .gallery-image {
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        border-radius: 8px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .gallery-image:hover {
+        transform: scale(1.1);
+    }
+
+    /* Estilos do modal */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.7);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        max-width: 90%;
+        max-height: 90%;
+        margin: auto;
+        border-radius: 8px;
+    }
+</style>
+
+<!-- Scripts para abrir e fechar o modal -->
+<script>
+    function openModal(modalId) {
+        document.getElementById(modalId).style.display = "flex";
+    }
+
+    function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+    }
+</script>
+
+
+    <section id="impactos" class="section">
+        <div class="container">
+            <h2>Confecção dos Cartazes</h2>
+            <p>Todas as crianças que participaram do projeto ajudaram a fazer os cartazes.</p>
+            <br>
+            <!-- Imagens com modal -->
+        <div class="image-gallery">
+            <img src="image5.jpeg" alt="Imagem 1" class="gallery-image" onclick="openModal('image5.jpeg')">
+            <img src="image6.jpeg" alt="Imagem 2" class="gallery-image" onclick="openModal('image6.jpeg')">
+            <img src="image7.jpeg" alt="Imagem 3" class="gallery-image" onclick="openModal('image7.jpeg')">
+            <img src="image8.jpeg" alt="Imagem 3" class="gallery-image" onclick="openModal('image8.jpeg')">
+           
+        </div>
+
+        <!-- Modals -->
+        <div id="image5.jpeg" class="modal" onclick="closeModal('image5.jpeg')">
+            <img src="image5.jpeg" alt="Imagem 1" class="modal-content">
+        </div>
+
+        <div id="image6.jpeg" class="modal" onclick="closeModal('image6.jpeg')">
+            <img src="image6.jpeg" alt="Imagem 2" class="modal-content">
+        </div>
+
+        <div id="image7.jpeg" class="modal" onclick="closeModal('image7.jpeg')">
+            <img src="image7.jpeg" alt="Imagem 3" class="modal-content">
+        </div>
+        <div id="image8.jpeg" class="modal" onclick="closeModal('image8.jpeg')">
+            <img src="image8.jpeg" alt="Imagem 3" class="modal-content">
+        </div>
+       
+    </div>
+</section>
+
+<!-- Estilos para o modal -->
+<style>
+    .image-gallery {
+        display: flex;
+        gap: 15px;
+    }
+    
+    .gallery-image {
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        border-radius: 8px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .gallery-image:hover {
+        transform: scale(1.1);
+    }
+
+    /* Estilos do modal */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.7);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        max-width: 90%;
+        max-height: 90%;
+        margin: auto;
+        border-radius: 8px;
+    }
+</style>
+
+<!-- Scripts para abrir e fechar o modal -->
+<script>
+    function openModal(modalId) {
+        document.getElementById(modalId).style.display = "flex";
+    }
+
+    function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+    }
+</script>
+
+        </div>
+    </section>
+
+    <section id="como-ajudar" class="section">
+        <div class="container">
+            <h2>Filme sobre o Bullying</h2>
+            <ul>
+                
+                <li>As crianças envolvidas no projeto assistiram um filme sobre o tema - "A história de Ben Carson".</li>
+            </ul>
+                    <br>
+            <!-- Imagens com modal -->
+        <div class="image-gallery">
+            <img src="image9.jpeg" alt="Imagem 1" class="gallery-image" onclick="openModal('image9.jpeg')">
+            <img src="image10.jpeg" alt="Imagem 2" class="gallery-image" onclick="openModal('image10.jpeg')">
+            <img src="image11.jpeg" alt="Imagem 3" class="gallery-image" onclick="openModal('image11.jpeg')">
+            <img src="image12.jpeg" alt="Imagem 3" class="gallery-image" onclick="openModal('image12.jpeg')">
+           
+        </div>
+
+        <!-- Modals -->
+        <div id="image9.jpeg" class="modal" onclick="closeModal('image9.jpeg')">
+            <img src="image9.jpeg" alt="Imagem 1" class="modal-content">
+        </div>
+
+        <div id="image10.jpeg" class="modal" onclick="closeModal('image10.jpeg')">
+            <img src="image10.jpeg" alt="Imagem 2" class="modal-content">
+        </div>
+
+        <div id="image11.jpeg" class="modal" onclick="closeModal('image11.jpeg')">
+            <img src="image11.jpeg" alt="Imagem 3" class="modal-content">
+        </div>
+        <div id="image12.jpeg" class="modal" onclick="closeModal('image12.jpeg')">
+            <img src="image12.jpeg" alt="Imagem 3" class="modal-content">
+        </div>
+       
+    </div>
+</section>
+
+<!-- Estilos para o modal -->
+<style>
+    .image-gallery {
+        display: flex;
+        gap: 15px;
+    }
+    
+    .gallery-image {
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        border-radius: 8px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .gallery-image:hover {
+        transform: scale(1.1);
+    }
+
+    /* Estilos do modal */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.7);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        max-width: 90%;
+        max-height: 90%;
+        margin: auto;
+        border-radius: 8px;
+    }
+</style>
+
+<!-- Scripts para abrir e fechar o modal -->
+<script>
+    function openModal(modalId) {
+        document.getElementById(modalId).style.display = "flex";
+    }
+
+    function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+    }
+</script>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Combate ao Bullying. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

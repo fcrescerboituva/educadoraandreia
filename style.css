@@ -1,0 +1,121 @@
+/* Resetando estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #34495e;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo das seções */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    font-size: 28px;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.section ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Rodapé */
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilo de contêiner centralizado */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Adicionando efeitos para links e botões */
+a {
+    text-decoration: none;
+    color: #2980b9;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #1abc9c;
+}
+/* Garantir que o contêiner da galeria esteja centralizado */
+.image-gallery {
+    display: flex;            /* Usando flexbox para facilitar o layout */
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;      /* Centraliza verticalmente */
+    flex-wrap: wrap;          /* Permite que as imagens quebrem linha se necessário */
+    gap: 10px;                /* Espaço entre as imagens */
+}
+
+/* Estilos para as imagens */
+.gallery-image {
+    width: 200px;             /* Tamanho das imagens */
+    height: auto;             /* Mantém a proporção das imagens */
+    cursor: pointer;         /* Mostra o cursor de clique */
+}
+
