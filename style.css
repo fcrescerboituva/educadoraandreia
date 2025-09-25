@@ -119,3 +119,11 @@ a:hover {
     cursor: pointer;         /* Mostra o cursor de clique */
 }
 
+.bg-video {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
