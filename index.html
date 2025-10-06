@@ -8,20 +8,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Projeto Bullying - Educadora Andréia Melo</h1>
-            <nav>
-                <ul>
-                    <li><a href="#roda">Roda de Conversa</a></li>
-                    <li><a href="#impactos">Cartazes</a></li>
-                    <li><a href="#como-ajudar">Filme sobre o Bullying</a></li>
-                     <li><a href="#abelha">Passeio da Abelha</a></li>
-                     <li><a href="#mostra">Cartazes para Mostra</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+  <div class="container">
+    <h1>Projeto sobre o Bullying - Educadora Andréia Melo</h1>
+    
+    <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#roda">Roda de Conversa</a></li>
+        <li><a href="#impactos">Cartazes</a></li>
+        <li><a href="#como-ajudar">Filme sobre o Bullying</a></li>
+        <li><a href="#abelha">Passeio da Abelha</a></li>
+        <li><a href="#mostra">Cartazes para Mostra</a></li>
+        <li><a href="#comunidade">Comunidade de Aprendizagem</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 
    <section id="roda" class="section">
     <div class="container">
@@ -434,6 +439,47 @@
     </div>
 </section>
 
+
+<section id="comunidade" class="section">
+        <div class="container">
+            <h2>Comunidade de Aprendizagem</h2>
+            <p>Bate papo com a advogada Marcela Patekoski Santana Cardoso</p>
+            <br>
+            <!-- Imagens com modal -->
+        <div class="image-gallery">
+            <img src="image41.jpeg" alt="Imagem 1" class="gallery-image" onclick="openModal('image41.jpeg')">
+            <img src="image42.jpeg" alt="Imagem 2" class="gallery-image" onclick="openModal('image42.jpeg')">
+            <img src="image43.jpeg" alt="Imagem 3" class="gallery-image" onclick="openModal('image43.jpeg')">
+            <img src="image44.jpeg" alt="Imagem 3" class="gallery-image" onclick="openModal('image44.jpeg')">
+            <img src="image45.jpeg" alt="Imagem 3" class="gallery-image" onclick="openModal('image45.jpeg')">
+          
+           
+        </div>
+
+        <!-- Modals -->
+        <div id="image41.jpeg" class="modal" onclick="closeModal('image41.jpeg')">
+            <img src="image41.jpeg" alt="Imagem 1" class="modal-content">
+        </div>
+
+        <div id="image42.jpeg" class="modal" onclick="closeModal('image42.jpeg')">
+            <img src="image42.jpeg" alt="Imagem 2" class="modal-content">
+        </div>
+
+        <div id="image43.jpeg" class="modal" onclick="closeModal('image43.jpeg')">
+            <img src="image43.jpeg" alt="Imagem 3" class="modal-content">
+        </div>
+        <div id="image44.jpeg" class="modal" onclick="closeModal('image44.jpeg')">
+            <img src="image44.jpeg" alt="Imagem 3" class="modal-content">
+        </div>
+
+          <div id="image45.jpeg" class="modal" onclick="closeModal('image45.jpeg')">
+            <img src="image45.jpeg" alt="Imagem 3" class="modal-content">
+        </div>
+        
+       
+    </div>
+</section>
+
 <!-- Estilos para o modal -->
 <style>
     .image-gallery {
@@ -476,7 +522,14 @@
         border-radius: 8px;
     }
 </style>
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const navbar = document.querySelector('.navbar');
 
+  toggle.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+  });
+</script>
 <!-- Scripts para abrir e fechar o modal -->
 <script>
     function openModal(modalId) {
@@ -490,7 +543,7 @@
 <p></p><br>
   <video autoplay muted loop playsinline controls
   class="bg-video"
-  width="600"  <!-- ou outro valor em px ou % -->
+  width="600" 
   style="border-radius: 15px; display: block; margin: 0 auto;">
   <source src="video andreia.mp4" type="video/mp4">
 </video>
