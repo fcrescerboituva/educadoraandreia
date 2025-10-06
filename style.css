@@ -9,10 +9,83 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
-    color: #333;
+    color: #faf9f9;
 }
 
 /* Cabeçalho */
+/* Estilos básicos */
+header {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f8f6f6;
+  padding: 8px 12px;
+  display: block;
+  border-radius: 4px;
+}
+
+nav ul li a:hover {
+  background-color: #ddd;
+}
+
+/* Botão do menu (hambúrguer) */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsivo para telas pequenas */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+}
+
+
 header {
     background-color: #34495e;
     padding: 20px 0;
@@ -42,6 +115,7 @@ header nav a {
 header nav a:hover {
     text-decoration: underline;
 }
+
 
 /* Estilo das seções */
 .section {
@@ -127,3 +201,4 @@ a:hover {
   margin: 0 auto;
   margin-bottom: 30px;
 }
+
